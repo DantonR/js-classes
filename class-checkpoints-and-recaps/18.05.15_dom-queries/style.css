@@ -1,0 +1,74 @@
+:root {
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+}
+.content-parent {
+    max-width: 600px;
+    margin: 9rem auto;
+}
+
+.serif--heading, .serif--sub-heading {
+    text-align: center;
+}
+.serif--sub-heading {
+    font-style: italic;
+}
+.serif {
+    font-family: 'Averia Serif Libre', cursive;
+    color: 111;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-weight: 400;
+}
+.serif--heading {
+    font-size: 2.6rem;
+}
+.sans-serif {
+    font-family: Helvetica;
+    transition: font-size 0.4s ease-in-out;
+    font-size: 1rem;
+}
+
+.centering-container {
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background: #111;
+    border: none;
+    color: white;
+    font-family: Helvetica;
+    font-size: 1.2rem;
+    text-transform: lowercase;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+}
+.btn:hover {
+    background: pink;
+    color: black;
+}
+.oswald {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-size: 8rem;
+    transition: all 0.3s ease-in-out;
+}
+.oswald--rotated {
+    transform: rotate(-20deg);
+}
+.oswald--skewed {
+    transform: rotate(9deg) skewY(-16deg);
+    font-size: 12rem;
+}
+.oswald--snazzed {
+    transform: rotate(9deg) skewY(-16deg);
+    font-size: 12rem;
+    color: pink;
+    text-shadow: 2px 4px 0px rgb(64, 138, 239);
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		iframe {
+			display: none;
+		}
+                .box {
+                        width: 200px;
+                        height: 200px;
+                        background: red;
+                }
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+</head>
+<body>
+	<h1>Good Day</h1>
+	<ul id="listParent">
+		<li class="a-class">1</li>
+		<li class="a-class">2</li>
+		<li class="a-class">3</li>
+		<li class="a-class">4</li>
+		<li class="a-class">5</li>
+	</ul>
+	<p class="a-class">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, rem aut pariatur corporis, dolorum, libero autem deleniti porro magnam laborum accusamus et fugiat! Placeat quaerat nulla eos quas, quia libero.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quod, totam vel hic aperiam laborum minus non vitae rerum culpa, voluptas obcaecati alias itaque, impedit quis harum nobis ea nam.</p>
+	<p class="question">"How was Tuesday's lesson?"</p>
+	<iframe src="https://giphy.com/embed/Wg6sfwn9f0sJq" width="427" height="480" frameBorder="0" class="giphy-embed answer" allowFullScreen></iframe>
+	<h4 class="a-class"></h4>
+        <div class="box"></div>
+        <input type="text" id="userInput" name="" value="">
+
+        <script>
+		(function(){
+		        var getAllPs = document.querySelectorAll('p');
+
+		        var getBox = document.querySelector('.box');
+                        var questionP = getAllPs[2];
+
+                        console.dir(questionP)
+
+                        function styleChange(element, prop, value) {
+                                element.style[prop] = value;
+                                element.style.prop
+                        }
+
+                        styleChange(questionP, 'fontSize', '100px');
+                        questionP.style.fontSize = "100px"
+
+
+                        function changeBoxColor(value) {
+                                getBox.style.background = value;
+                        };
+
+                        changeBoxColor('green');
+		})();
+	</script>
+</body>
+</html>
