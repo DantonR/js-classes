@@ -8,14 +8,42 @@ var gimmeH4 = document.querySelector('h4');
 var p = document.createElement('p');
 
 // Add content to the new element
-p.innerText = 'This is brand new and made with js!';
+// p.innerText = 'This is brand new and made with js!';
+//
+// // Insert the new node before the reference node
+// gimmeH4.after(p);
+//
+// // p.style.color = 'green';
+// // p.style.fontSize = '90px';
+//
+// p.setAttribute('id', 'idName');
+// p.setAttribute('class', 'some-class')
+// p.setAttribute('style', 'font-size: 44px; font-style: italic; color: pink;')
 
-// Insert the new node before the reference node
-gimmeH4.after(p);
 
-// p.style.color = 'green';
-// p.style.fontSize = '90px';
+(function() {
 
-p.setAttribute('id', 'idName');
-p.setAttribute('class', 'some-class')
-p.setAttribute('style', 'font-size: 44px; font-style: italic; color: pink;')
+    var getBtn = document.querySelector('#button');
+    var domForm = document.querySelector('form');
+    var getInputVal = document.querySelector('#userInput').value;
+
+    // var init = function() {
+    //     getBtn.addEventListener('click', addContent(getInputVal), false);
+    // }();
+
+
+
+    getBtn.addEventListener("click", function(){
+        var getInputVal = document.querySelector('#userInput').value;
+        addContent(getInputVal);
+    }, false);
+
+
+    function addContent(textContent) {
+        console.log(textContent);
+        var createText = document.createElement('p');
+        createText.innerText = textContent;
+        console.log(createText.innerText);
+        domForm.after(createText);
+    };
+}());
