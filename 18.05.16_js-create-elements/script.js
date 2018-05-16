@@ -27,12 +27,6 @@ var p = document.createElement('p');
     var domForm = document.querySelector('form');
     var getInputVal = document.querySelector('#userInput').value;
 
-    // var init = function() {
-    //     getBtn.addEventListener('click', addContent(getInputVal), false);
-    // }();
-
-
-
     getBtn.addEventListener("click", function(){
         var getInputVal = document.querySelector('#userInput').value;
         addContent(getInputVal);
