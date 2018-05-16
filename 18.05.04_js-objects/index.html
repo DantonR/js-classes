@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <ul class="list-thing" id="listThing">
+            <li class="inner">A</li>
+            <li class="inner">B</li>
+            <li class="inner">C</li>
+            <li class="inner">D</li>
+            <li class="inner">D</li>
+            <li class="inner">E</li>
+            <li class="inner">F</li>
+            <li class="inner">G</li>
+        </ul>
+
+        <script type="text/javascript">
+                // SECOND OBJECT SESSION
+            // var myObj = {
+            //     aProperty: 'first property',
+            //     bProperty: 'second property',
+            //     cProperty: 'third property',
+            //     innerObjOne: {
+            //         dProperty: 'fourth property',
+            //         eProperty: 'fifth property',
+            //         fProperty: 'sixth property'
+            //     },
+            //     innerObjTwo: {
+            //         a: 1,
+            //         b: 2,
+            //         c: 3,
+            //         dArray: ['a', 'b', 'c', {
+            //             arrayProp: 'really?!'
+            //         }]
+            //     },
+            //     aMethod: function () {
+            //         alert(myObj.innerObjTwo.dArray[3].arrayProp)
+            //     }
+            // };
+            // console.dir(myObj);
+            // myObj.aMethod();
+            // console.log(myObj.innerObjTwo.dArray[3])
+
+            // function triggerMethod() {
+            //     myObj.aMethod();
+            // }
+            // setTimeout(function() {
+            //     triggerMethod();
+            // }, 8000);
+
+            // ACCESS LIST ITEMS
+            var getList = document.getElementsByClassName('inner');
+            console.dir(getList);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <link rel="stylesheet" href="node_modules/timelinejs-slider/dist/css/timeline.min.css" />
+        <!-- <link rel="stylesheet" href="css/master.css"> -->
+        <style media="screen">
+            h1 {
+                font-family: Helvetica;
+                font-size: 5em;
+                padding-left: 1em;
+            }
+        </style>
+        <meta charset="utf-8">
+        <title>JQ Plugins</title>
+    </head>
+    <body>
+        <div class="timeline-container timeline-theme-1">
+          <div class="timeline js-timeline">
+            <div data-time="2017">
+              <h1>Slide One</h1>
+            </div>
+            <div data-time="2016">
+              your content or markup
+            </div>
+            <div data-time="2015">
+              your content or markup
+            </div>
+            <div data-time="2014">
+              your content or markup
+            </div>
+            <div data-time="2013">
+              your content or markup
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="node_modules/timelinejs-slider/dist/js/timeline.min.js"></script>
+        <script type="text/javascript">
+            $('.js-timeline').Timeline();
+            // $('.timeline-1').Timeline();
+        </script>
+    </body>
+</html>

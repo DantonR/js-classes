@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <style media="screen">
+            li {
+
+            }
+        </style>
+        <meta charset="utf-8">
+        <title>Arguments & Parameters</title>
+    </head>
+
+    <body>
+        <ul>
+            <li id="one">1</li>
+            <li id="two">2</li>
+            <li id="three">3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+        </ul>
+
+        <script type="text/javascript">
+
+
+            function changeColor (color, id) {
+                var el = document.getElementById(id);
+                el.style.color = color;
+            };
+
+            changeColor('red', 'two');
+            changeColor('yellow', 'three');
+            // function getArea(width, height) {
+            //     return width * height;
+            // }
+            // var top = 200;
+            // var side = 1000;
+            // console.log(getArea(top, side))
+            //
+            // function getName(name) {
+            //     return name;
+            // }
+            //
+            // console.log(getName('Danton'))
+        </script>
+    </body>
+</html>

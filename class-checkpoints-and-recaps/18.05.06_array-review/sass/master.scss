@@ -1,0 +1,28 @@
+$font__sans: 'Brother 1816 Web', sans-serif;
+
+
+
+:root {
+    font-size: 62.5%;
+}
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 25s ease infinite;
+    -moz-animation: Gradient 25s ease infinite;
+    animation: Gradient 25s ease infinite;
+}
+.wrapper {
+    margin-top: 10em;
+}
+.headingOne {
+    font-family: $font__sans;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
