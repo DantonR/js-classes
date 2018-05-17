@@ -1,0 +1,21 @@
+main {
+	padding: 100px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	background: #888;
+	margin: 10px;
+	display: flex;
+	text-align: center;
+	font-family: Helvetica;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-weight: 900;
+	font-size: 28px;
+
+}
