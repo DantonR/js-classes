@@ -1,17 +1,17 @@
 (function() {
-    var getBoxes = document.querySelectorAll('.box');
+    var getBoxes = document.querySelectorAll('.box'); // select all box elements
     console.log(getBoxes);
 
-    function changeBoxBg(boxProp, boxValue, boxPropTwo, boxValueTwo){
+    function changeBoxBg(boxProp, boxValue, boxPropTwo, boxValueTwo){ // the function that changes box properties depending on the arguments entered
         for (var i = 0; i < 7; i++) {
             getBoxes[i].style[boxProp] = boxValue;
             getBoxes[i].style[boxPropTwo] = boxValueTwo;
         } // loop end
     }; // function end
 
-    changeBoxBg('fontSize', '40px', 'fontFamily', 'Georgia');
+    changeBoxBg('fontSize', '40px', 'backgroundColor', 'Red');
 
-    function addClassToBox(a, b, c, d){
+    function addClassToBox(a, b, c, d){ //
         for (var i = 0; i < getBoxes.length; i++) {
             var boxText = getBoxes[i].innerText;
 
@@ -23,7 +23,7 @@
     } // function end
 
 
-    addClassToBox('3', '5', '7', '11');
+    addClassToBox('3', '5', '11', '12');
 
     var theArray = [11, 'a', 22, 'b', 55, 'c', 84, 'd', 101, 'something'];
     var storageArray = [];
