@@ -1,0 +1,9 @@
+.animate-text--appear {
+	opacity: 1;
+	transform: translateY(0);
+}
+.animate-text--hidden {
+	transition: all 0.8s ease-in-out;
+	transform: translateY(50px);
+	opacity: 0;
+}
