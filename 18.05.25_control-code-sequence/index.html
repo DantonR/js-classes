@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Ways of calling function to control the sequence of code
+        (function() {
+
+            //Event Listener
+            // When the window loads the setupStart function will call
+            // and run.
+            window.onload = setupStart;
+
+            function setupStart () {
+                console.log('a');
+                console.log('b');
+                console.log('c');
+                // a b c logs then we call addItem
+                addItem();
+            } // setupStart ends
+
+
+
+            function addItem () {
+                console.log('d');
+                console.log('e');
+                console.log('f');
+                // d e f logs then we call finaFunction
+                finalFunction('finish');
+                // finalFunction();
+            } // addITem ends
+
+
+            function finalFunction (what) {
+                // finalFunction runs and its argument will
+                // decide whether longFinish or shortFinish is called or not
+                if (what === 'finish') {
+                    shortFinish();
+                } else {
+                    longFinish();
+                }
+
+                function longFinish(){
+                    console.log('This');
+                    console.log('is');
+                    console.log('a');
+                    console.log('long');
+                    console.log('finish')
+                }
+            } // finalFunction ends
+
+
+            function shortFinish () {
+                console.log('finish early');
+            }
+
+        }());
+    </script>
+</body>
+</html>
