@@ -1,1 +1,4 @@
 .DS_Store
+node_modules
+gulp-test
+yoobee-gulp-readme.txt

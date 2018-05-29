@@ -6,7 +6,8 @@ var app = {
 		bgChoice: document.getElementsByName('background')[0],
 		fontChoice: document.getElementsByName('font')[0],
 		borderChoice: document.getElementsByName('border')[0],
-		messageChoice: document.getElementsByName('name')[0],
+		messageChoice: document.getElementsByName('message')[0],
+		currentText: document.querySelector('h1'),
 		cardImage: document.querySelector('img'),
 		bgColor: document.querySelector('.card'),
 		fontFamily: document.querySelector('.sketch'),
@@ -46,19 +47,31 @@ var app = {
 		// * FONT CHANGE END *
 
 		// * BORDER CHANGE *
-		// if (app.vars.currentBorder.className === 'none') {
-		// 	app.vars.currentBorder.className = 'noneBorder';
-		// } else if () {
-		//
-		// }
+		if (app.vars.borderChoice.value === 'none') {
+			app.vars.currentBorder.className = 'noneBorder';
+		}
+		else if (app.vars.borderChoice.value === 'thin') {
+			app.vars.currentBorder.className = 'smallBorder';
+		}
+		else if (app.vars.borderChoice.value === 'thick') {
+			app.vars.currentBorder.className = 'bigBorder';
+		}
+		else if (app.vars.borderChoice.value === 'filled') {
+			app.vars.currentBorder.className = 'filledBorder';
+		}
 
 		// * BORDER CHANGE END *
+
+		// * MESSAGE CHANGE *
+		if (app.vars.messageChoice.value === '') {
+			alert('You should write a message!')
+		} else {
+			app.vars.currentText.textContent = app.vars.messageChoice.value;
+		}
+
 	}
 	// ***** END METHODS *****
 }
 
-console.dir(app.vars);
-console.dir(app.vars[Object.keys(app.vars)[1]]);
+
 app.eventListeners();
-console.dir(app.vars.currentBorder.className);
-// console.dir(app.vars.cardImage);
