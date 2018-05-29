@@ -12,15 +12,14 @@ var app = {
 		bgColor: document.querySelector('.card'),
 		fontFamily: document.querySelector('.sketch'),
 		currentBorder: document.querySelector('.noBorder'),
-		// brdrClass: app.vars.currentBorder.className,
 	},
 	// ***** END VARIABLES *****
 
 	// ***** EVENT LISTENERS *****
 	eventListeners: function() { // function containing all eventListeners
-		app.vars.button.addEventListener('click', function(){
+		app.vars.button.addEventListener('click', function(){ // the buttons click event
 			event.preventDefault();
-			app.cardChange(
+			app.cardChange( // the function that changes the card, using the different options to take as arguments
 				app.vars.imgChoice,
 				app.vars.bgChoice,
 				app.vars.fontChoice,
@@ -33,17 +32,17 @@ var app = {
 	// ***** END EVENT LISTENERS *****
 
 	// ***** METHODS *****
-	cardChange: function(img, bg, fontFamily, borderType, message) {
+	cardChange: function(img, bg, fontFamily, borderType, message) { // the card change function, taking the paramaeters which will change the getElementsByName
 		// * IMAGE CHANGE *
-		app.vars.cardImage.src = 'assets/' + img.value + '.jpg' ;
+		app.vars.cardImage.src = 'assets/' + img.value + '.jpg' ; // take the image source and change the name to be the same as the image choice
 		// * IMAGE CHANGE END *
 
 		// * BG CHANGE *
-		app.vars.bgColor.className = 'card ' + bg.value + 'Background';
+		app.vars.bgColor.className = 'card ' + bg.value + 'Background'; // take the backgrounds class name and change it to be the same as the background color choice
 		// * BG CHANGE END *
 
 		// * FONT CHANGE *
-		app.vars.fontFamily.className = font.value;
+		app.vars.fontFamily.className = font.value; // change the font to what the user chooses
 		// * FONT CHANGE END *
 
 		// * BORDER CHANGE *
@@ -58,7 +57,7 @@ var app = {
 		}
 		else if (app.vars.borderChoice.value === 'filled') {
 			app.vars.currentBorder.className = 'filledBorder';
-		}
+		} // if statement that changes the border depending on what the user chooses
 
 		// * BORDER CHANGE END *
 
@@ -67,11 +66,12 @@ var app = {
 			alert('You should write a message!')
 		} else {
 			app.vars.currentText.textContent = app.vars.messageChoice.value;
-		}
+		} // if the user doesn't enter anything the browser shows an alert, otherwise take the input and place it in the H1
 
 	}
 	// ***** END METHODS *****
-}
+	
+} // --------------APP END--------------
 
 
 app.eventListeners();
