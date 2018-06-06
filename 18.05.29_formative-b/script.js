@@ -46,13 +46,13 @@ var app = {
 		// * FONT CHANGE END *
 
 		// * BORDER CHANGE *
-		if (app.vars.borderChoice.value === 'none') {
+		if (borderType.value === 'none') {
 			app.vars.currentBorder.className = 'noneBorder';
 		}
 		else if (app.vars.borderChoice.value === 'thin') {
 			app.vars.currentBorder.className = 'smallBorder';
 		}
-		else if (app.vars.borderChoice.value === 'thick') {
+		else if (borderType.value === 'thick') {
 			app.vars.currentBorder.className = 'bigBorder';
 		}
 		else if (app.vars.borderChoice.value === 'filled') {
@@ -70,7 +70,7 @@ var app = {
 
 	}
 	// ***** END METHODS *****
-	
+
 } // --------------APP END--------------
 
 
